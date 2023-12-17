@@ -296,6 +296,33 @@ SWEP.Animations = {
 	
     ["inspect"] = {
         Source = "inspect",
+	      IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.20,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.25,
+                lhik = 0,
+                rhik = 0
+            },
+	        {
+                t = 0.65,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.70,
+                lhik = 1,
+                rhik = 0
+            },
+        },
 			EventTable = {
 		    {s = "weapons/shared/deploy.wav", t = 0},
 			{s = "weapons/ump45/magrelease.wav", t = 1.9},
