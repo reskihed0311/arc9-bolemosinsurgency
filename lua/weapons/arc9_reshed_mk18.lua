@@ -33,7 +33,7 @@ SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     Pos = Vector(0, 0, 0), -- non tpik (while on ground, on npc etc)
      Ang = Angle(0, 0, 0),
-     TPIKPos = Vector(-5, 5, -7), -- arc9_tpik 1, you can make cool poses with it
+     TPIKPos = Vector(-7, 8, -7), -- arc9_tpik 1, you can make cool poses with it
     TPIKAng = Angle(0, 0, 180),
      Scale = 0.9
 }
@@ -357,9 +357,9 @@ SWEP.Animations = {
         },
         EventTable = {
 		    {s = "weapons/shared/reloadstart.wav", t = 0},
-			{s = "weapons/ar15/magout.wav", t = 0.25},
+			{s = "weapons/ar15/magout.wav", t = 0.20},
 			{s = "weapons/shared/deploy.wav", t = 1.1},
-			{s = "weapons/ar15/magin.wav", t = 1.63},
+			{s = "weapons/ar15/magin.wav", t = 1.45},
 			{s = "weapons/shared/reloadend.wav", t = 1.99}
         },
     },
