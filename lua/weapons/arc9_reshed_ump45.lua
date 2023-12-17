@@ -109,7 +109,7 @@ SWEP.Spread = 0.003
 
 
 SWEP.SpreadAddMove = 0.01 -- Applied when speed is equal to walking speed.
-SWEP.SpreadAddMidAir = 0.5 -- Applied when not touching the ground.
+SWEP.SpreadAddMidAir = 0.1 -- Applied when not touching the ground.
 SWEP.SpreadAddHipFire = 0.010 -- Applied when not sighted.
 SWEP.SpreadAddSighted = -0.003 -- Applied when sighted. Can be negative.
 SWEP.SpreadAddBlindFire = nil -- Applied when blind firing.

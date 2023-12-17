@@ -42,14 +42,14 @@ SWEP.WorldModelOffset = {
 SWEP.Crosshair = true
 
 
-SWEP.DamageMax = 8 -- Damage done at point blank range
+SWEP.DamageMax = 6 -- Damage done at point blank range
 SWEP.DamageMin = 1 -- Damage done at maximum range
 
 SWEP.ImpactForce = 3 -- Force that bullets apply on hit
 
 
 SWEP.RangeMin = 0 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 2500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMax = 1500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 SWEP.Distance = 5000 -- In Hammer units, how far bullets can travel, period.
 
 SWEP.Num = 12 -- Number of bullets to shoot
@@ -100,8 +100,8 @@ SWEP.RecoilSide = 1.5 -- Multiplier for vertical recoil
 SWEP.UseDispersion = true -- Use this for shotguns - Additional random angle to spread, same for each pellet
 SWEP.DispersionSpread = 0.001 -- SWEP.Spread will be clump spread, and this will be dispersion of clump
 
-SWEP.SpreadAddMove = 0.01 -- Applied when speed is equal to walking speed.
-SWEP.SpreadAddMidAir = 0.5 -- Applied when not touching the ground.
+SWEP.SpreadAddMove = 0.05 -- Applied when speed is equal to walking speed.
+SWEP.SpreadAddMidAir = 0.1 -- Applied when not touching the ground.
 SWEP.SpreadAddHipFire = 0.010 -- Applied when not sighted.
 SWEP.SpreadAddSighted = -0.003 -- Applied when sighted. Can be negative.
 SWEP.SpreadAddBlindFire = nil -- Applied when blind firing.
@@ -249,6 +249,11 @@ SWEP.ManualAction = true
 SWEP.ManualActionNoLastCycle = true
 
 
+SWEP.HideBones  = {
+    [1] = "shell",
+}
+
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "ar2"
@@ -266,18 +271,18 @@ SWEP.Attachments = {
     {
         PrintName = "Top Rail",
         DefaultAttName = "No Device",
-        Category = "ins2_opticrail",
+        Category = "ins2_mounters",
         Bone = "Weapon",
-        Pos = Vector(0, -0.2, 0),
-        Ang = Angle(90, -90, 0),
+        Pos = Vector(0, 0, 2.3),
+        Ang = Angle(0, 0, -90),
     },
    {
         PrintName = "Bottom Rail",
         DefaultAttName = "No Device",
-        Category = "ins2_rail",
-        Bone = "Weapon",
-        Pos = Vector(0, 5, 10),
-        Ang = Angle(90, -90, 0),
+        Category = "ins2_mounters_grip",
+        Bone = "pump",
+        Pos = Vector(0, 0.1, 0),
+        Ang = Angle(0, 180, -90),
     },
 }
 
@@ -339,6 +344,11 @@ SWEP.Animations = {
                 lhik = 1,
                 rhik = 1
             },
+			   {
+                t = 1,
+                lhik = 0,
+                rhik = 1
+            },
         },
         EventTable = {
         },
@@ -349,6 +359,11 @@ SWEP.Animations = {
       	IKTimeLine = {
             {
                 t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+			  {
+                t = 0.7,
                 lhik = 1,
                 rhik = 0
             },
@@ -368,6 +383,26 @@ SWEP.Animations = {
                 lhik = 1,
                 rhik = 1
             },
+		 {
+                t = 0.2,
+                lhik = 0,
+                rhik = 1
+            },
+		{
+                t = 0.5,
+                lhik = 0,
+                rhik = 1
+            },
+		 {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+		{
+                t = 1,
+                lhik = 0,
+                rhik = 1
+            },
 		},
         
         EventTable = {
@@ -382,7 +417,7 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
+                lhik = 0,
                 rhik = 1
             },
         },
