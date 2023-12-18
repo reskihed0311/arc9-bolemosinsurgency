@@ -269,10 +269,12 @@ SWEP.HeightOverBore = 1
 
 -------------------------- HoldTypes
 
+SWEP.TPIKParentToSpine4 = false -- TPIK makes VM origin on right hand (which is located different on each holdtype, crouch jump run etc). Set to true if you want vm origin on spine bone
+
 SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "ar2"
 SWEP.HoldTypeHolstered = nil
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldTypeSights = "smg"
 SWEP.HoldTypeCustomize = "slam"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
