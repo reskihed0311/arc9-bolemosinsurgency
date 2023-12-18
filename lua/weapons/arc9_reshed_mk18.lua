@@ -237,7 +237,7 @@ SWEP.SightMidPoint = { -- Where the gun should be at the middle of it's irons
 
 SWEP.ViewModelFOVBase = 80 -- Set to override viewmodel FOV
 -- Alternative "resting" position
-SWEP.ActivePos = Vector(-1, -7, 0)
+SWEP.ActivePos = Vector(-2, -7, 0)
 SWEP.ActiveAng = Angle(0, 0, -5)
 
 -- Position while walking/running (no sprint)
@@ -358,7 +358,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.60,
+                t = 0.70,
                 lhik = 0,
                 rhik = 0
             },
@@ -391,7 +391,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.60,
+                t = 0.75,
                 lhik = 0,
                 rhik = 0
             },
