@@ -249,7 +249,7 @@ SWEP.CrouchPos = Vector(-4, 1, -4)
 SWEP.CrouchAng = Angle(0, 0, -30)
 
 -- Position when sprinting or safe
-SWEP.RestPos = Vector(0, -5, 0)
+SWEP.RestPos = Vector(-2, -8, 0)
 SWEP.RestAng = Angle(23, -10, -30)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
@@ -356,7 +356,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.80,
+                t = 0.60,
                 lhik = 0,
                 rhik = 0
             },
@@ -368,10 +368,10 @@ SWEP.Animations = {
         },
         EventTable = {
 		    {s = "weapons/shared/reloadstart.wav", t = 0},
-			{s = "weapons/ar15/magout.wav", t = 0.15},
+			{s = "weapons/ar15/magout.wav", t = 0.23},
 			{s = "weapons/shared/deploy.wav", t = 1.1},
-			{s = "weapons/ar15/magin.wav", t = 1.45},
-			{s = "weapons/shared/reloadend.wav", t = 1.99}
+			{s = "weapons/ar15/magin.wav", t = 1.37},
+			{s = "weapons/shared/reloadend.wav", t = 1.80}
         },
     },
     ["reload_empty"] = {
