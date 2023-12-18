@@ -368,7 +368,7 @@ SWEP.Animations = {
         },
         EventTable = {
 		    {s = "weapons/shared/reloadstart.wav", t = 0},
-			{s = "weapons/ar15/magout.wav", t = 0.20},
+			{s = "weapons/ar15/magout.wav", t = 0.15},
 			{s = "weapons/shared/deploy.wav", t = 1.1},
 			{s = "weapons/ar15/magin.wav", t = 1.45},
 			{s = "weapons/shared/reloadend.wav", t = 1.99}
