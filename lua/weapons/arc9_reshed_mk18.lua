@@ -41,7 +41,17 @@ SWEP.WorldModelOffset = {
 
 SWEP.Crosshair = true
 
+SWEP.ShouldDropMagEmpty = false
 
+SWEP.DropMagazineSounds = {
+       "weapons/shared/mag_rifle1.wav",
+
+}
+
+SWEP.DropMagazinePos = Vector(0, 0, 0) -- offsets
+SWEP.DropMagazineAng = Angle(90, 90, 180)
+
+SWEP.DropMagazineModel = "models/magazines/mk18mag.mdl"
 
 SWEP.DamageMax = 34 -- Damage done at point blank range
 SWEP.DamageMin = 13 -- Damage done at maximum range
@@ -71,6 +81,7 @@ SWEP.LegDamage = 1
 
 SWEP.NeverPhysBullet = true
 
+SWEP.Slot = 2
 
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
@@ -78,7 +89,7 @@ SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
 
 
-SWEP.RPM = 700
+SWEP.RPM = 900
 
 SWEP.Firemodes = {
     {
@@ -365,6 +376,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
+		DropMagAt = 0.30,
                IKTimeLine = {
             {
                 t = 0,
@@ -389,10 +401,10 @@ SWEP.Animations = {
         },
         EventTable = {
 		    {s = "weapons/shared/reloadstart.wav", t = 0},
-			{s = "weapons/ar15/magout.wav", t = 0.30},
+			{s = "weapons/ar15/magout.wav", t = 0.20},
 			{s = "weapons/shared/deploy.wav", t = 1.1},
-			{s = "weapons/ar15/magin.wav", t = 1.70},
-			{s = "weapons/ar15/boltforward.wav", t = 2.2},
+			{s = "weapons/ar15/magin.wav", t = 1.50},
+			{s = "weapons/ar15/boltforward.wav", t = 1.95},
 			{s = "weapons/shared/reloadend.wav", t = 2.5}
         },
     }

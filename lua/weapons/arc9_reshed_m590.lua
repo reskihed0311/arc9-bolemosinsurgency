@@ -10,6 +10,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "Model 590"
 
+SWEP.Slot = 3
 
 SWEP.Class = "Pump Action Shotgun"
 

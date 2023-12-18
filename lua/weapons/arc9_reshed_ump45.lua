@@ -13,6 +13,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "H&k UMP45"
 
+SWEP.Slot = 2
 
 SWEP.Class = "Sub Machine Gun"
 
